@@ -17,8 +17,8 @@ class Inventory {
             
             randomIndices.forEach((index) => {
                 cy.get(inventoryLocators.inventoryItem).eq(index).within(() => {
-                    cy.get('.inventory_item_name').invoke('text').then((name) => {
-                        cy.get('.inventory_item_price').invoke('text').then((price) => {
+                    cy.get(inventoryLocators.inventoryItemName).invoke('text').then((name) => {
+                        cy.get(inventoryLocators.inventoryItemPrice).invoke('text').then((price) => {
                             addedItems.push({ 
                                 name: name.trim(), 
                                 price: price.trim() 
