@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "./dist",
+        "types": [
+            "cypress",
+            "node",
+            "@badeball/cypress-cucumber-preprocessor"
+        ]
+    },
+    "include": [
+        "cypress/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

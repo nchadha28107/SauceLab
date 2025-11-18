@@ -1,0 +1,8 @@
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore package-lock.json (only if necessary)
+package-lock.json
+
+# Cypress reports html, video and screenshot folders
+cypress/reports/
